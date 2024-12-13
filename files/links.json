@@ -1,0 +1,523 @@
+[
+  {
+    "url": "https://developer.garmin.com/connect-iq/overview/",
+    "text": "Overview",
+    "nestedLinks": []
+  },
+  {
+    "url": "https://developer.garmin.com/connect-iq/compatible-devices/",
+    "text": "Compatible Devices",
+    "nestedLinks": []
+  },
+  {
+    "url": "https://developer.garmin.com/connect-iq/sdk/",
+    "text": "Get the SDK",
+    "nestedLinks": [
+      {
+        "href": "https://developer.garmin.com/connect-iq/monetization",
+        "text": "https://developer.garmin.com/connect-iq/monetization"
+      }
+    ]
+  },
+  {
+    "url": "https://developer.garmin.com/connect-iq/submit-an-app/",
+    "text": "Submit an App",
+    "nestedLinks": []
+  },
+  {
+    "url": "https://developer.garmin.com/connect-iq/stay-informed/",
+    "text": "Stay Informed",
+    "nestedLinks": []
+  },
+  {
+    "url": "https://developer.garmin.com/connect-iq/connect-iq-basics/",
+    "text": "Connect IQ Basics",
+    "nestedLinks": [
+      {
+        "href": "https://developer.garmin.com/connect-iq/connect-iq-basics/getting-started/",
+        "text": "Getting Started"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/connect-iq-basics/your-first-app/",
+        "text": "Your First App"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/connect-iq-basics/app-types/",
+        "text": "App Types"
+      }
+    ]
+  },
+  {
+    "url": "https://developer.garmin.com/connect-iq/monkey-c/",
+    "text": "Monkey C",
+    "nestedLinks": [
+      {
+        "href": "https://developer.garmin.com/connect-iq/monkey-c/objects-and-memory/",
+        "text": "Objects and Memory"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/monkey-c/functions/",
+        "text": "Functions"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/monkey-c/containers/",
+        "text": "Containers"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/monkey-c/monkey-types/",
+        "text": "Monkey Types"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/monkey-c/exceptions-and-errors/",
+        "text": "Exceptions and Errors"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/monkey-c/annotations/",
+        "text": "Annotations"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/monkey-c/coding-conventions/",
+        "text": "Coding Conventions"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/monkey-c/compiler-options/",
+        "text": "Compiler Options"
+      }
+    ]
+  },
+  {
+    "url": "https://developer.garmin.com/connect-iq/core-topics/",
+    "text": "Core Topics",
+    "nestedLinks": [
+      {
+        "href": "https://developer.garmin.com/connect-iq/core-topics/manifest-and-permissions/",
+        "text": "Manifest and Permissions"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/core-topics/application-and-system-modules/",
+        "text": "Application and System Modules"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/core-topics/persisting-data/",
+        "text": "Persisting Data"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/core-topics/backgrounding/",
+        "text": "Backgrounding"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/core-topics/glances/",
+        "text": "Glances"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/core-topics/properties-and-app-settings/",
+        "text": "Properties and App Settings"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/core-topics/intents/",
+        "text": "Intents"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/core-topics/build-configuration/",
+        "text": "Build Configuration"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/core-topics/security/",
+        "text": "Security"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/core-topics/user-interface/",
+        "text": "User Interface"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/core-topics/layouts/",
+        "text": "Layouts"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/core-topics/graphics/",
+        "text": "Graphics"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/core-topics/input-handling/",
+        "text": "Input Handling"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/core-topics/native-controls/",
+        "text": "Native Controls"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/core-topics/resources/",
+        "text": "Resources"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/core-topics/monkey-style/",
+        "text": "Monkey Style"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/core-topics/getting-the-users-attention/",
+        "text": "Getting the Users Attention"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/core-topics/https/",
+        "text": "HTTPS"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/core-topics/authenticated-web-services/",
+        "text": "Authenticated Web Services"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/core-topics/communicating-with-mobile-apps/",
+        "text": "Communicating with Mobile Apps"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/core-topics/downloading-content/",
+        "text": "Downloading Content"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/core-topics/mobile-sdk-for-android/",
+        "text": "Mobile SDK for Android"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/core-topics/mobile-sdk-for-ios/",
+        "text": "Mobile SDK for iOS"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/core-topics/ant-and-ant-plus/",
+        "text": "Ant and Ant Plus"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/core-topics/bluetooth-low-energy/",
+        "text": "Bluetooth Low Energy"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/core-topics/sensors/",
+        "text": "Sensors"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/core-topics/positioning/",
+        "text": "Positioning"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/core-topics/activity-recording/",
+        "text": "Activity Recording"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/core-topics/quantifying-the-user/",
+        "text": "Quantifying the User"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/core-topics/complications/",
+        "text": "Complications"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/core-topics/shareable-libraries/",
+        "text": "Shareable Libraries"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/core-topics/debugging/",
+        "text": "Debugging"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/core-topics/unit-testing/",
+        "text": "Unit Testing"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/core-topics/exception-reporting-tool/",
+        "text": "Exception Reporting Tool"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/core-topics/profiling/",
+        "text": "Profiling"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/core-topics/publishing-to-the-store/",
+        "text": "Publishing to the Store"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/core-topics/beta-apps/",
+        "text": "Beta Apps"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/core-topics/trial-apps/",
+        "text": "Trial Apps"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/core-topics/requesting-reviews/",
+        "text": "Requesting Reviews"
+      }
+    ]
+  },
+  {
+    "url": "https://developer.garmin.com/connect-iq/user-experience-guidelines/",
+    "text": "User Experience Guidelines",
+    "nestedLinks": [
+      {
+        "href": "https://developer.garmin.com/connect-iq/user-experience-guidelines/design-principles/",
+        "text": "Design Principles"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/user-experience-guidelines/understanding-what-you-are-building/",
+        "text": "Understanding What You Are Building"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/user-experience-guidelines/developing-the-concepts/",
+        "text": "Developing the Concepts"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/user-experience-guidelines/designing-workflows-and-interactions/",
+        "text": "Designing Workflows and Interactions"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/user-experience-guidelines/incorporating-the-visual-design-and-product-personalities/",
+        "text": "Incorporating the Visual Design and Product Personalities"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/user-experience-guidelines/entry-points/",
+        "text": "Entry Points"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/user-experience-guidelines/views/",
+        "text": "Views"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/user-experience-guidelines/watch-faces/",
+        "text": "Watch Faces"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/user-experience-guidelines/data-fields/",
+        "text": "Data Fields"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/user-experience-guidelines/menus/",
+        "text": "Menus"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/user-experience-guidelines/confirmations/",
+        "text": "Confirmations"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/user-experience-guidelines/progress-bars/",
+        "text": "Progress Bars"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/user-experience-guidelines/map-views/",
+        "text": "Map Views"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/user-experience-guidelines/localization/",
+        "text": "Localization"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/user-experience-guidelines/forerunner-2018/",
+        "text": "Forerunner 2018"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/user-experience-guidelines/edge-2019/",
+        "text": "Edge 2019"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/user-experience-guidelines/vivoactive-2019/",
+        "text": "Vivoactive 2019"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/user-experience-guidelines/venu-2021/",
+        "text": "Venu 2021"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/user-experience-guidelines/fenix-2022/",
+        "text": "Fenix 2022"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/user-experience-guidelines/instinct-2022/",
+        "text": "Instinct 2022"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/user-experience-guidelines/edge-2022/",
+        "text": "Edge 2022"
+      }
+    ]
+  },
+  {
+    "url": "https://developer.garmin.com/connect-iq/connect-iq-faq/",
+    "text": "Connect IQ FAQ",
+    "nestedLinks": [
+      {
+        "href": "https://developer.garmin.com/connect-iq/connect-iq-faq/how-do-i-get-my-watch-face-to-update-every-second/",
+        "text": "How Do I Get My Watch Face to Update Every Second"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/connect-iq-faq/how-do-i-use-rest-services/",
+        "text": "How Do I Use REST Services"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/connect-iq-faq/how-do-i-make-a-watch-face-for-amoled-products/",
+        "text": "How Do I Make a Watch Face for AMOLED Products"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/connect-iq-faq/how-do-i-create-a-connect-iq-background-service/",
+        "text": "How Do I Create a Connect IQ Background Service"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/connect-iq-faq/how-do-i-optimize-bitmaps/",
+        "text": "How Do I Optimize Bitmaps"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/connect-iq-faq/how-do-i-override-the-goal-animations/",
+        "text": "How Do I Override the Goal Animations"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/connect-iq-faq/how-do-i-use-custom-fonts/",
+        "text": "How Do I Use Custom Fonts"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/connect-iq-faq/how-do-i-use-a-mapview/",
+        "text": "How Do I Use a Mapview"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/connect-iq-faq/how-do-i-use-the-connect-iq-mobile-sdk/",
+        "text": "How Do I Use the Connect IQ Mobile SDK"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/connect-iq-faq/how-do-i-create-an-audio-content-provider/",
+        "text": "How Do I Create an Audio Content Provider"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/connect-iq-faq/how-do-i-integrate-connect-iq-and-travis-ci/",
+        "text": "How do I Integrate Connect IQ and Travis CI"
+      }
+    ]
+  },
+  {
+    "url": "https://developer.garmin.com/connect-iq/reference-guides/",
+    "text": "Reference Guides",
+    "nestedLinks": [
+      {
+        "href": "https://developer.garmin.com/connect-iq/reference-guides/monkey-c-reference/",
+        "text": "Monkey C Reference"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/reference-guides/jungle-reference/",
+        "text": "Jungle Reference"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/reference-guides/monkey-motion-reference/",
+        "text": "Monkey Motion Reference"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/reference-guides/monkey-graph-reference/",
+        "text": "Monkey Graph Reference"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/reference-guides/visual-studio-code-extension/",
+        "text": "Visual Studio Code Extension"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/reference-guides/monkey-c-command-line-setup/",
+        "text": "Monkey C Command Line Setup"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/reference-guides/devices-reference/",
+        "text": "Devices Reference"
+      }
+    ]
+  },
+  {
+    "url": "https://developer.garmin.com/connect-iq/app-review-guidelines/",
+    "text": "App Review Guidelines",
+    "nestedLinks": []
+  },
+  {
+    "url": "https://developer.garmin.com/connect-iq/personality-library/",
+    "text": "Personality Library",
+    "nestedLinks": [
+      {
+        "href": "https://developer.garmin.com/connect-iq/personality-library/colors/",
+        "text": "Colors"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/personality-library/iconography/",
+        "text": "Iconography"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/personality-library/typography/",
+        "text": "Typography"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/personality-library/input-hints/",
+        "text": "Input Hints"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/personality-library/prompts/",
+        "text": "Prompts"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/personality-library/confirmations/",
+        "text": "Confirmations"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/personality-library/toasts/",
+        "text": "Toasts"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/personality-library/action-views/",
+        "text": "Action Views"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/personality-library/page-loops/",
+        "text": "Page Loops"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/personality-library/progress-bars/",
+        "text": "Progress Bars"
+      }
+    ]
+  },
+  {
+    "url": "https://developer.garmin.com/connect-iq/monetization/",
+    "text": "Monetization",
+    "nestedLinks": [
+      {
+        "href": "https://developer.garmin.com/connect-iq/monetization/merchant-onboarding/",
+        "text": "Merchant Onboarding"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/monetization/app-sales/",
+        "text": "App Sales"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/monetization/account-management/",
+        "text": "Account Management"
+      },
+      {
+        "href": "https://developer.garmin.com/connect-iq/monetization/price-points/",
+        "text": "Price Points"
+      }
+    ]
+  },
+  {
+    "url": "https://developer.garmin.com/brand-guidelines/overview/",
+    "text": "Garmin Brand Guidelines",
+    "nestedLinks": [
+      {
+        "href": "https://developer.garmin.com/brand-guidelines/connect/",
+        "text": "Garmin Connect"
+      },
+      {
+        "href": "https://developer.garmin.com/brand-guidelines/connect-iq/",
+        "text": "Garmin Connect IQ"
+      },
+      {
+        "href": "https://developer.garmin.com/brand-guidelines/pay/",
+        "text": "Garmin Pay"
+      },
+      {
+        "href": "https://developer.garmin.com/brand-guidelines/logo/",
+        "text": "Garmin Logo"
+      },
+      {
+        "href": "https://developer.garmin.com/brand-guidelines/ready/",
+        "text": "Garmin Ready"
+      }
+    ]
+  }
+]
