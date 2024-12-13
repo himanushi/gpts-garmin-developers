@@ -1,0 +1,25 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "emeraldwalk.runonsave": {
+      "commands": [
+        {
+          "match": "\\.js$|\\.cjs$|\\.jsx$|\\.tsx$|\\.ts$|\\.json$|\\.css$|\\.scss$|\\.code-workspace$",
+          "cmd": "npx @biomejs/biome check --write --unsafe ${file}"
+        },
+        {
+          "match": "\\.mc$|\\.html$|\\.xml$|.prettierrc",
+          "cmd": "npx prettier --write ${file}"
+        }
+      ]
+    },
+    "editor.renderWhitespace": "all"
+  },
+  "extensions": {
+    "recommendations": ["emeraldwalk.runonsave", "biome.biome-vscode"]
+  }
+}
