@@ -1,8 +1,8 @@
 const puppeteer = require("puppeteer");
 const fs = require("node:fs");
 
-const inputFile = "files/document-links.json";
-const outputFile = "files/document-content.txt";
+const inputFile = "files/reference-links.json";
+const outputFile = "files/reference-content.txt";
 
 async function fetchVisibleText(url) {
   try {
@@ -10,11 +10,6 @@ async function fetchVisibleText(url) {
     const page = await browser.newPage();
 
     await page.goto(url, { waitUntil: "networkidle0" });
-    try {
-      await page.waitForSelector(".connect-IQ-articles", { timeout: 3000 });
-    } catch (error) {
-      console.log(`Timeout: ${url}`);
-    }
 
     const visibleText = await page.evaluate(() => {
       const removeElements = (selector) => {
@@ -23,16 +18,13 @@ async function fetchVisibleText(url) {
         }
       };
 
-      for (const el of document.querySelectorAll(
-        'div > ul > li > a[href="/connect-iq/overview/"]',
-      )) {
-        const parentDiv = el.closest("div");
-        if (parentDiv) {
-          parentDiv.remove();
-        }
-      }
-
-      const elementsToRemove = ["header", "footer", "script", "style"];
+      const elementsToRemove = [
+        "header",
+        "footer",
+        "script",
+        "style",
+        "iframe",
+      ];
       for (const selector of elementsToRemove) {
         removeElements(selector);
       }
@@ -64,22 +56,13 @@ async function generateTextFile() {
     const outputStream = fs.createWriteStream(outputFile, { flags: "w" });
 
     for (const entry of data) {
-      const { text, url, nestedLinks } = entry;
+      const { text, href } = entry;
 
-      console.log(`Fetching visible text from: ${url}`);
-      const mainContent = await fetchVisibleText(url);
+      console.log(`Fetching visible text from: ${href}`);
+      const mainContent = await fetchVisibleText(href);
       if (mainContent) {
-        outputStream.write(`\n\n# [${text}](${url})n`);
+        outputStream.write(`\n\n# [${text}](${href})n`);
         outputStream.write(`${mainContent}\n`);
-      }
-
-      for (const nested of nestedLinks) {
-        console.log(`Fetching visible text from nested link: ${nested.href}`);
-        const nestedContent = await fetchVisibleText(nested.href);
-        if (nestedContent) {
-          outputStream.write(`\n\n# [${nested.text}](${nested.href})n`);
-          outputStream.write(`${nestedContent}\n`);
-        }
       }
     }
 

@@ -1,0 +1,484 @@
+
+
+# [Activity (Module)](https://developer.garmin.com/connect-iq/api-docs/Toybox/Activity.html)nModule: Toybox.Activity
+ Overview
+ The Activity module provides a way to retrieve available info for the current activity. Activity Info is automatically provided by the compute() method in Data Fields. The getActivityInfo() method is available for use within apps or in other cases, such as data field initialization. This module also provides two sets of constants: SWIM_STROKE: Indicates the swimStrokeType() , such as freestyle, backstroke, or butterfly. 
+ TIMER_STATE: Indicates the activity recording timerState() , such as stopped, started, paused, etc. 
+ 
+ Since: API Level 1.0.0 Classes Under Namespace
+ Classes: Info , ProfileInfo , WorkoutIntervalStep , WorkoutStep , WorkoutStepInfo Constant Summary
+ SwimStrokeType
+ Since: API Level 1.0.0 Name Value Since Description See Also 
+ SWIM_STROKE_FREESTYLE 0 API Level 1.2.2 Freestyle stroke 
+ SWIM_STROKE_BACKSTROKE 1 API Level 1.2.2 Backstroke 
+ SWIM_STROKE_BREASTSTROKE 2 API Level 1.2.2 Breaststroke 
+ SWIM_STROKE_BUTTERFLY 3 API Level 1.2.2 Butterfly stroke 
+ SWIM_STROKE_DRILL 4 API Level 1.2.2 Drill mode 
+ SWIM_STROKE_MIXED 5 API Level 1.2.2 Mixed stroke mode 
+ SWIM_STROKE_IM 6 API Level 1.2.2 Mixed interval with equal number of butterfly, backstroke, breaststroke, and freestyle, in that order. 
+ TimerState
+ Since: API Level 1.0.0 Name Value Since Description See Also 
+ TIMER_STATE_OFF 0 API Level 2.1.0 The timer is off. There is not an active recording 
+ TIMER_STATE_STOPPED 1 API Level 2.1.0 The timer is stopped. The recording is active, with the timer stopped. 
+ TIMER_STATE_PAUSED 2 API Level 2.1.0 The timer is paused. The recording is active with the timer paused. This state occurs when the timer is active, but has been stopped with the Auto-Pause feature. 
+ TIMER_STATE_ON 3 API Level 2.1.0 The timer is on. The recording is active and the timer is running. 
+ Sport
+ Since: API Level 3.2.0 Name Value Since Description See Also 
+ SPORT_GENERIC 0 API Level 3.2.0 
+ SPORT_RUNNING 1 API Level 3.2.0 
+ SPORT_CYCLING 2 API Level 3.2.0 
+ SPORT_TRANSITION 3 API Level 3.2.0 
+ SPORT_FITNESS_EQUIPMENT 4 API Level 3.2.0 
+ SPORT_SWIMMING 5 API Level 3.2.0 
+ SPORT_BASKETBALL 6 API Level 3.2.0 
+ SPORT_SOCCER 7 API Level 3.2.0 
+ SPORT_TENNIS 8 API Level 3.2.0 
+ SPORT_AMERICAN_FOOTBALL 9 API Level 3.2.0 
+ SPORT_TRAINING 10 API Level 3.2.0 
+ SPORT_WALKING 11 API Level 3.2.0 
+ SPORT_CROSS_COUNTRY_SKIING 12 API Level 3.2.0 
+ SPORT_ALPINE_SKIING 13 API Level 3.2.0 
+ SPORT_SNOWBOARDING 14 API Level 3.2.0 
+ SPORT_ROWING 15 API Level 3.2.0 
+ SPORT_MOUNTAINEERING 16 API Level 3.2.0 
+ SPORT_HIKING 17 API Level 3.2.0 
+ SPORT_MULTISPORT 18 API Level 3.2.0 
+ SPORT_PADDLING 19 API Level 3.2.0 
+ SPORT_FLYING 20 API Level 3.2.0 
+ SPORT_E_BIKING 21 API Level 3.2.0 
+ SPORT_MOTORCYCLING 22 API Level 3.2.0 
+ SPORT_BOATING 23 API Level 3.2.0 
+ SPORT_DRIVING 24 API Level 3.2.0 
+ SPORT_GOLF 25 API Level 3.2.0 
+ SPORT_HANG_GLIDING 26 API Level 3.2.0 
+ SPORT_HORSEBACK_RIDING 27 API Level 3.2.0 
+ SPORT_HUNTING 28 API Level 3.2.0 
+ SPORT_FISHING 29 API Level 3.2.0 
+ SPORT_INLINE_SKATING 30 API Level 3.2.0 
+ SPORT_ROCK_CLIMBING 31 API Level 3.2.0 
+ SPORT_SAILING 32 API Level 3.2.0 
+ SPORT_ICE_SKATING 33 API Level 3.2.0 
+ SPORT_SKY_DIVING 34 API Level 3.2.0 
+ SPORT_SNOWSHOEING 35 API Level 3.2.0 
+ SPORT_SNOWMOBILING 36 API Level 3.2.0 
+ SPORT_STAND_UP_PADDLEBOARDING 37 API Level 3.2.0 
+ SPORT_SURFING 38 API Level 3.2.0 
+ SPORT_WAKEBOARDING 39 API Level 3.2.0 
+ SPORT_WATER_SKIING 40 API Level 3.2.0 
+ SPORT_KAYAKING 41 API Level 3.2.0 
+ SPORT_RAFTING 42 API Level 3.2.0 
+ SPORT_WINDSURFING 43 API Level 3.2.0 
+ SPORT_KITESURFING 44 API Level 3.2.0 
+ SPORT_TACTICAL 45 API Level 3.2.0 
+ SPORT_JUMPMASTER 46 API Level 3.2.0 
+ SPORT_BOXING 47 API Level 3.2.0 
+ SPORT_FLOOR_CLIMBING 48 API Level 3.2.0 
+ SPORT_BASEBALL 49 API Level 3.2.0 
+ SPORT_SOFTBALL_FAST_PITCH 50 API Level 3.2.0 
+ SPORT_SOFTBALL_SLOW_PITCH 51 API Level 3.2.0 
+ SPORT_SHOOTING 56 API Level 3.2.0 
+ SPORT_AUTO_RACING 57 API Level 3.2.0 
+ SPORT_WINTER_SPORT 58 API Level 4.1.6 
+ SPORT_GRINDING 59 API Level 4.1.6 
+ SPORT_HEALTH_MONITORING 60 API Level 4.1.6 
+ SPORT_MARINE 61 API Level 4.1.6 
+ SPORT_HIIT 62 API Level 4.1.6 
+ SPORT_VIDEO_GAMING 63 API Level 4.1.6 
+ SPORT_RACKET 64 API Level 4.1.6 
+ SPORT_WHEELCHAIR_PUSH_WALK 65 API Level 4.1.6 
+ SPORT_WHEELCHAIR_PUSH_RUN 66 API Level 4.1.6 
+ SPORT_MEDITATION 67 API Level 4.1.6 
+ SPORT_PARA_SPORT 68 API Level 4.1.6 
+ SPORT_DISC_GOLF 69 API Level 4.1.6 
+ SPORT_TEAM_SPORT 70 API Level 4.1.6 
+ SPORT_CRICKET 71 API Level 4.1.6 
+ SPORT_RUGBY 72 API Level 4.1.6 
+ SPORT_HOCKEY 73 API Level 4.1.6 
+ SPORT_LACROSSE 74 API Level 4.1.6 
+ SPORT_VOLLEYBALL 75 API Level 4.1.6 
+ SPORT_WATER_TUBING 76 API Level 4.1.6 
+ SPORT_WAKESURFING 77 API Level 4.1.6 
+ SPORT_INVALID 255 API Level 3.2.0 
+ SubSport
+ Since: API Level 3.2.0 Name Value Since Description See Also 
+ SUB_SPORT_GENERIC 0 API Level 3.2.0 
+ SUB_SPORT_TREADMILL 1 API Level 3.2.0 
+ SUB_SPORT_STREET 2 API Level 3.2.0 
+ SUB_SPORT_TRAIL 3 API Level 3.2.0 
+ SUB_SPORT_TRACK 4 API Level 3.2.0 
+ SUB_SPORT_SPIN 5 API Level 3.2.0 
+ SUB_SPORT_INDOOR_CYCLING 6 API Level 3.2.0 
+ SUB_SPORT_ROAD 7 API Level 3.2.0 
+ SUB_SPORT_MOUNTAIN 8 API Level 3.2.0 
+ SUB_SPORT_DOWNHILL 9 API Level 3.2.0 
+ SUB_SPORT_RECUMBENT 10 API Level 3.2.0 
+ SUB_SPORT_CYCLOCROSS 11 API Level 3.2.0 
+ SUB_SPORT_HAND_CYCLING 12 API Level 3.2.0 
+ SUB_SPORT_TRACK_CYCLING 13 API Level 3.2.0 
+ SUB_SPORT_INDOOR_ROWING 14 API Level 3.2.0 
+ SUB_SPORT_ELLIPTICAL 15 API Level 3.2.0 
+ SUB_SPORT_STAIR_CLIMBING 16 API Level 3.2.0 
+ SUB_SPORT_LAP_SWIMMING 17 API Level 3.2.0 
+ SUB_SPORT_OPEN_WATER 18 API Level 3.2.0 
+ SUB_SPORT_FLEXIBILITY_TRAINING 19 API Level 3.2.0 
+ SUB_SPORT_STRENGTH_TRAINING 20 API Level 3.2.0 
+ SUB_SPORT_WARM_UP 21 API Level 3.2.0 
+ SUB_SPORT_MATCH 22 API Level 3.2.0 
+ SUB_SPORT_EXERCISE 23 API Level 3.2.0 
+ SUB_SPORT_CHALLENGE 24 API Level 3.2.0 
+ SUB_SPORT_INDOOR_SKIING 25 API Level 3.2.0 
+ SUB_SPORT_CARDIO_TRAINING 26 API Level 3.2.0 
+ SUB_SPORT_INDOOR_WALKING 27 API Level 4.1.6 
+ SUB_SPORT_E_BIKE_FITNESS 28 API Level 4.1.6 
+ SUB_SPORT_BMX 29 API Level 4.1.6 
+ SUB_SPORT_CASUAL_WALKING 30 API Level 4.1.6 
+ SUB_SPORT_SPEED_WALKING 31 API Level 4.1.6 
+ SUB_SPORT_BIKE_TO_RUN_TRANSITION 32 API Level 4.1.6 
+ SUB_SPORT_RUN_TO_BIKE_TRANSITION 33 API Level 4.1.6 
+ SUB_SPORT_SWIM_TO_BIKE_TRANSITION 34 API Level 4.1.6 
+ SUB_SPORT_ATV 35 API Level 4.1.6 
+ SUB_SPORT_MOTOCROSS 36 API Level 4.1.6 
+ SUB_SPORT_BACKCOUNTRY 37 API Level 4.1.6 
+ SUB_SPORT_RESORT 38 API Level 4.1.6 
+ SUB_SPORT_RC_DRONE 39 API Level 4.1.6 
+ SUB_SPORT_WINGSUIT 40 API Level 4.1.6 
+ SUB_SPORT_WHITEWATER 41 API Level 4.1.6 
+ SUB_SPORT_SKATE_SKIING 42 API Level 4.1.6 
+ SUB_SPORT_YOGA 43 API Level 4.1.6 
+ SUB_SPORT_PILATES 44 API Level 4.1.6 
+ SUB_SPORT_INDOOR_RUNNING 45 API Level 4.1.6 
+ SUB_SPORT_GRAVEL_CYCLING 46 API Level 4.1.6 
+ SUB_SPORT_E_BIKE_MOUNTAIN 47 API Level 4.1.6 
+ SUB_SPORT_COMMUTING 48 API Level 4.1.6 
+ SUB_SPORT_MIXED_SURFACE 49 API Level 4.1.6 
+ SUB_SPORT_NAVIGATE 50 API Level 4.1.6 
+ SUB_SPORT_TRACK_ME 51 API Level 4.1.6 
+ SUB_SPORT_MAP 52 API Level 4.1.6 
+ SUB_SPORT_SINGLE_GAS_DIVING 53 API Level 4.1.6 
+ SUB_SPORT_MULTI_GAS_DIVING 54 API Level 4.1.6 
+ SUB_SPORT_GAUGE_DIVING 55 API Level 4.1.6 
+ SUB_SPORT_APNEA_DIVING 56 API Level 4.1.6 
+ SUB_SPORT_APNEA_HUNTING 57 API Level 4.1.6 
+ SUB_SPORT_VIRTUAL_ACTIVITY 58 API Level 4.1.6 
+ SUB_SPORT_OBSTACLE 59 API Level 4.1.6 
+ SUB_SPORT_ASSISTANCE 60 API Level 4.1.6 
+ SUB_SPORT_INCIDENT_DETECTED 61 API Level 4.1.6 
+ SUB_SPORT_BREATHING 62 API Level 4.1.6 
+ SUB_SPORT_CCR_DIVING 63 API Level 4.1.6 
+ SUB_SPORT_AREA_CALC 64 API Level 4.1.6 
+ SUB_SPORT_SAIL_RACE 65 API Level 4.1.6 
+ SUB_SPORT_EXPEDITION 66 API Level 4.1.6 
+ SUB_SPORT_ULTRA 67 API Level 4.1.6 
+ SUB_SPORT_INDOOR_CLIMBING 68 API Level 4.1.6 
+ SUB_SPORT_BOULDERING 69 API Level 4.1.6 
+ SUB_SPORT_HIIT 70 API Level 4.1.6 
+ SUB_SPORT_INDOOR_GRINDING 71 API Level 4.1.6 
+ SUB_SPORT_HUNTING_WITH_DOGS 72 API Level 4.1.6 
+ SUB_SPORT_AMRAP 73 API Level 4.1.6 
+ SUB_SPORT_EMOM 74 API Level 4.1.6 
+ SUB_SPORT_TABATA 75 API Level 4.1.6 
+ SUB_SPORT_FALL_DETECTED 76 API Level 4.1.6 
+ SUB_SPORT_ESPORT 77 API Level 4.1.6 
+ SUB_SPORT_TRIATHLON 78 API Level 4.1.6 
+ SUB_SPORT_DUATHLON 79 API Level 4.1.6 
+ SUB_SPORT_BRICK 80 API Level 4.1.6 
+ SUB_SPORT_SWIM_RUN 81 API Level 4.1.6 
+ SUB_SPORT_ADVENTURE_RACE 82 API Level 4.1.6 
+ SUB_SPORT_TRUCKER_WORKOUT 83 API Level 4.1.6 
+ SUB_SPORT_PICKLEBALL 84 API Level 4.1.6 
+ SUB_SPORT_PADEL 85 API Level 4.1.6 
+ SUB_SPORT_INDOOR_WHEELCHAIR_WALK 86 API Level 4.1.6 
+ SUB_SPORT_INDOOR_WHEELCHAIR_RUN 87 API Level 4.1.6 
+ SUB_SPORT_INDOOR_HAND_CYCLING 88 API Level 4.1.6 
+ SUB_SPORT_ANCHOR 89 API Level 4.1.6 
+ SUB_SPORT_FIELD 90 API Level 4.1.6 
+ SUB_SPORT_ICE 91 API Level 4.1.6 
+ SUB_SPORT_ULTIMATE 92 API Level 4.1.6 
+ SUB_SPORT_PLATFORM 93 API Level 4.1.6 
+ SUB_SPORT_SQUASH 94 API Level 4.1.6 
+ SUB_SPORT_BADMINTON 95 API Level 4.1.6 
+ SUB_SPORT_RACQUETBALL 96 API Level 4.1.6 
+ SUB_SPORT_TABLE_TENNIS 97 API Level 4.1.6 
+ SUB_SPORT_INVALID 255 API Level 3.2.0 
+ WorkoutIntensity
+ Since: API Level 3.2.0 Name Value Since Description See Also 
+ WORKOUT_INTENSITY_ACTIVE 0 API Level 3.2.0 
+ WORKOUT_INTENSITY_REST 1 API Level 3.2.0 
+ WORKOUT_INTENSITY_WARMUP 2 API Level 3.2.0 
+ WORKOUT_INTENSITY_COOLDOWN 3 API Level 3.2.0 
+ WORKOUT_INTENSITY_RECOVERY 4 API Level 3.2.0 
+ WORKOUT_INTENSITY_INTERVAL 5 API Level 3.2.0 
+ WORKOUT_INTENSITY_INVALID 255 API Level 3.2.0 
+ WorkoutStepDurationType
+ Since: API Level 3.2.0 Name Value Since Description See Also 
+ WORKOUT_STEP_DURATION_TIME 0 API Level 3.2.0 
+ WORKOUT_STEP_DURATION_DISTANCE 1 API Level 3.2.0 
+ WORKOUT_STEP_DURATION_HR_LESS_THAN 2 API Level 3.2.0 
+ WORKOUT_STEP_DURATION_HR_GREATER_THAN 3 API Level 3.2.0 
+ WORKOUT_STEP_DURATION_CALORIES 4 API Level 3.2.0 
+ WORKOUT_STEP_DURATION_OPEN 5 API Level 3.2.0 
+ WORKOUT_STEP_DURATION_REPEAT_UNTIL_STEPS_COMPLETE 6 API Level 3.2.0 
+ WORKOUT_STEP_DURATION_REPEAT_UNTIL_TIME 7 API Level 3.2.0 
+ WORKOUT_STEP_DURATION_REPEAT_UNTIL_DISTANCE 8 API Level 3.2.0 
+ WORKOUT_STEP_DURATION_REPEAT_UNTIL_CALORIES 9 API Level 3.2.0 
+ WORKOUT_STEP_DURATION_REPEAT_UNTIL_HR_LESS_THAN 10 API Level 3.2.0 
+ WORKOUT_STEP_DURATION_REPEAT_UNTIL_HR_GREATER_THAN 11 API Level 3.2.0 
+ WORKOUT_STEP_DURATION_REPEAT_UNTIL_POWER_LESS_THAN 12 API Level 3.2.0 
+ WORKOUT_STEP_DURATION_REPEAT_UNTIL_POWER_GREATER_THAN 13 API Level 3.2.0 
+ WORKOUT_STEP_DURATION_POWER_LESS_THAN 14 API Level 3.2.0 
+ WORKOUT_STEP_DURATION_POWER_GREATER_THAN 15 API Level 3.2.0 
+ WORKOUT_STEP_DURATION_TRAINING_PEAKS_TRAINING_STRESS_SCORE 16 API Level 3.2.0 
+ WORKOUT_STEP_DURATION_REPEAT_UNTIL_POWER_LAST_LAP_LESS_THAN 17 API Level 3.2.0 
+ WORKOUT_STEP_DURATION_REPEAT_UNTIL_MAX_POWER_LAST_LAP_LESS_THAN 18 API Level 3.2.0 
+ WORKOUT_STEP_DURATION_POWER_3S_LESS_THAN 19 API Level 3.2.0 
+ WORKOUT_STEP_DURATION_POWER_10S_LESS_THAN 20 API Level 3.2.0 
+ WORKOUT_STEP_DURATION_POWER_30S_LESS_THAN 21 API Level 3.2.0 
+ WORKOUT_STEP_DURATION_POWER_3S_GREATER_THAN 22 API Level 3.2.0 
+ WORKOUT_STEP_DURATION_POWER_10S_GREATER_THAN 23 API Level 3.2.0 
+ WORKOUT_STEP_DURATION_POWER_30S_GREATER_THAN 24 API Level 3.2.0 
+ WORKOUT_STEP_DURATION_POWER_LAP_LESS_THAN 25 API Level 3.2.0 
+ WORKOUT_STEP_DURATION_POWER_LAP_GREATER_THAN 26 API Level 3.2.0 
+ WORKOUT_STEP_DURATION_REPEAT_UNTIL_TRAINING_PEAKS_TRAINING_STRESS_SCORE 27 API Level 3.2.0 
+ WORKOUT_STEP_DURATION_REPETITION_TIME 28 API Level 3.2.0 
+ WORKOUT_STEP_DURATION_REPS 29 API Level 3.2.0 
+ WORKOUT_STEP_DURATION_INVALID 255 API Level 3.2.0 
+ WorkoutStepTargetType
+ Since: API Level 3.2.0 Name Value Since Description See Also 
+ WORKOUT_STEP_TARGET_SPEED 0 API Level 3.2.0 
+ WORKOUT_STEP_TARGET_HEART_RATE 1 API Level 3.2.0 
+ WORKOUT_STEP_TARGET_OPEN 2 API Level 3.2.0 
+ WORKOUT_STEP_TARGET_CADENCE 3 API Level 3.2.0 
+ WORKOUT_STEP_TARGET_POWER 4 API Level 3.2.0 
+ WORKOUT_STEP_TARGET_GRADE 5 API Level 3.2.0 
+ WORKOUT_STEP_TARGET_RESISTANCE 6 API Level 3.2.0 
+ WORKOUT_STEP_TARGET_POWER_3S 7 API Level 3.2.0 
+ WORKOUT_STEP_TARGET_POWER_10S 8 API Level 3.2.0 
+ WORKOUT_STEP_TARGET_POWER_30S 9 API Level 3.2.0 
+ WORKOUT_STEP_TARGET_POWER_LAP 10 API Level 3.2.0 
+ WORKOUT_STEP_TARGET_SWIM_STROKE 11 API Level 3.2.0 
+ WORKOUT_STEP_TARGET_SPEED_LAP 12 API Level 3.2.0 
+ WORKOUT_STEP_TARGET_HEART_RATE_LAP 13 API Level 3.2.0 
+ WORKOUT_STEP_TARGET_INHALE_DURATION 14 API Level 3.2.0 
+ WORKOUT_STEP_TARGET_INHALE_HOLD_DURATION 15 API Level 3.2.0 
+ WORKOUT_STEP_TARGET_EXHALE_DURATION 16 API Level 3.2.0 
+ WORKOUT_STEP_TARGET_EXHALE_HOLD_DURATION 17 API Level 3.2.0 
+ WORKOUT_STEP_TARGET_POWER_CURVE 18 API Level 3.2.0 
+ WORKOUT_STEP_TARGET_INVALID 255 API Level 3.2.0 
+ Instance Method Summary collapse 
+ getActivityInfo () as Activity.Info or Null Get the current Activity Info. 
+ getCurrentWorkoutStep () as Activity.WorkoutStepInfo or Null Get information about the current workout step. 
+ getNextWorkoutStep () as Activity.WorkoutStepInfo or Null Get information about the next workout step. 
+ getProfileInfo () as Activity.ProfileInfo Get information about the current profile. 
+ 
+ Instance Method Details
+ getActivityInfo() as Activity.Info or Null 
+ Get the current Activity Info. Returns: Activity.Info — The current Activity Info or null if there is no current activity. 
+ 
+ Since: API Level 1.0.0 getCurrentWorkoutStep() as Activity.WorkoutStepInfo or Null 
+ Get information about the current workout step. Supported Devices: [ View devices ] Approach® S70 42mm
+ Approach® S70 47mm
+ Captain Marvel
+ D2™ Air X10
+ D2™ Air
+ D2™ Mach 1
+ Darth Vader™
+ Descent™ G1 / G1 Solar
+ Descent™ Mk2 / Descent™ Mk2i
+ Descent™ Mk2 S
+ Descent™ Mk3 43mm / Mk3i 43mm
+ Descent™ Mk3i 51mm
+ Edge® 1030 Plus
+ Edge® 1030
+ Edge® 1040 / 1040 Solar
+ Edge® 1050
+ Edge® 130 Plus
+ Edge® 530
+ Edge® 540 / 540 Solar
+ Edge® 830
+ Edge® 840 / 840 Solar
+ Enduro™ 3
+ Enduro™
+ epix™ (Gen 2) / quatix® 7 Sapphire
+ epix™ Pro (Gen 2) 42mm
+ epix™ Pro (Gen 2) 47mm / quatix® 7 Pro
+ epix™ Pro (Gen 2) 51mm / D2™ Mach 1 Pro / tactix® 7 – AMOLED Edition
+ First Avenger
+ Forerunner® 165 Music
+ Forerunner® 165
+ Forerunner® 245 Music
+ Forerunner® 245
+ Forerunner® 255 Music
+ Forerunner® 255
+ Forerunner® 255s Music
+ Forerunner® 255s
+ Forerunner® 265
+ Forerunner® 265s
+ Forerunner® 55
+ Forerunner® 645 Music
+ Forerunner® 745
+ Forerunner® 945 LTE
+ Forerunner® 945
+ Forerunner® 955 / Solar
+ Forerunner® 965
+ fēnix® 5 Plus
+ fēnix® 5S Plus
+ fēnix® 5X Plus
+ fēnix® 6 / 6 Solar / 6 Dual Power
+ fēnix® 6 Pro / 6 Sapphire / 6 Pro Solar / 6 Pro Dual Power / quatix® 6
+ fēnix® 6S / 6S Solar / 6S Dual Power
+ fēnix® 6S Pro / 6S Sapphire / 6S Pro Solar / 6S Pro Dual Power
+ fēnix® 6X Pro / 6X Sapphire / 6X Pro Solar / tactix® Delta Sapphire / Delta Solar / Delta Solar - Ballistics Edition / quatix® 6X / 6X Solar / 6X Dual Power
+ fēnix® 7 / quatix® 7
+ fēnix® 7 Pro - Solar Edition (no Wi-Fi)
+ fēnix® 7 Pro
+ fēnix® 7S Pro
+ fēnix® 7S
+ fēnix® 7X / tactix® 7 / quatix® 7X Solar / Enduro™ 2
+ fēnix® 7X Pro - Solar Edition (no Wi-Fi)
+ fēnix® 7X Pro
+ fēnix® 8 43mm
+ fēnix® 8 47mm / 51mm
+ fēnix® 8 Solar 47mm
+ fēnix® 8 Solar 51mm
+ fēnix® E
+ Instinct® 2 / Solar / Dual Power / dēzl Edition
+ Instinct® 2S / Solar / Dual Power
+ Instinct® 2X Solar
+ Instinct® Crossover
+ MARQ® (Gen 2) Athlete / Adventurer / Captain / Golfer / Carbon Edition / Commander - Carbon Edition
+ MARQ® (Gen 2) Aviator
+ MARQ® Adventurer
+ MARQ® Athlete
+ MARQ® Aviator
+ MARQ® Captain / MARQ® Captain: American Magic Edition
+ MARQ® Commander
+ MARQ® Driver
+ MARQ® Expedition
+ MARQ® Golfer
+ Rey™
+ Venu® 2 Plus
+ Venu® 2
+ Venu® 2S
+ Venu® 3
+ Venu® 3S
+ Venu® Mercedes-Benz® Collection
+ Venu® Sq 2 Music
+ Venu® Sq 2
+ Venu® Sq. Music Edition
+ Venu® Sq
+ Venu®
+ vívoactive® 3 Music
+ vívoactive® 4
+ vívoactive® 4S
+ vívoactive® 5
+ 
+ Returns: Activity.WorkoutStepInfo — if a workout is active, null otherwise 
+ 
+ Since: API Level 3.2.0 Throws: ( Lang.OperationNotAllowedException ) — Thrown if called from a data field app 
+ 
+ getNextWorkoutStep() as Activity.WorkoutStepInfo or Null 
+ Get information about the next workout step. Supported Devices: [ View devices ] Approach® S70 42mm
+ Approach® S70 47mm
+ Captain Marvel
+ D2™ Air X10
+ D2™ Air
+ D2™ Mach 1
+ Darth Vader™
+ Descent™ G1 / G1 Solar
+ Descent™ Mk2 / Descent™ Mk2i
+ Descent™ Mk2 S
+ Descent™ Mk3 43mm / Mk3i 43mm
+ Descent™ Mk3i 51mm
+ Edge® 1030 Plus
+ Edge® 1030
+ Edge® 1040 / 1040 Solar
+ Edge® 1050
+ Edge® 130 Plus
+ Edge® 530
+ Edge® 540 / 540 Solar
+ Edge® 830
+ Edge® 840 / 840 Solar
+ Enduro™ 3
+ Enduro™
+ epix™ (Gen 2) / quatix® 7 Sapphire
+ epix™ Pro (Gen 2) 42mm
+ epix™ Pro (Gen 2) 47mm / quatix® 7 Pro
+ epix™ Pro (Gen 2) 51mm / D2™ Mach 1 Pro / tactix® 7 – AMOLED Edition
+ First Avenger
+ Forerunner® 165 Music
+ Forerunner® 165
+ Forerunner® 245 Music
+ Forerunner® 245
+ Forerunner® 255 Music
+ Forerunner® 255
+ Forerunner® 255s Music
+ Forerunner® 255s
+ Forerunner® 265
+ Forerunner® 265s
+ Forerunner® 55
+ Forerunner® 645 Music
+ Forerunner® 745
+ Forerunner® 945 LTE
+ Forerunner® 945
+ Forerunner® 955 / Solar
+ Forerunner® 965
+ fēnix® 5 Plus
+ fēnix® 5S Plus
+ fēnix® 5X Plus
+ fēnix® 6 / 6 Solar / 6 Dual Power
+ fēnix® 6 Pro / 6 Sapphire / 6 Pro Solar / 6 Pro Dual Power / quatix® 6
+ fēnix® 6S / 6S Solar / 6S Dual Power
+ fēnix® 6S Pro / 6S Sapphire / 6S Pro Solar / 6S Pro Dual Power
+ fēnix® 6X Pro / 6X Sapphire / 6X Pro Solar / tactix® Delta Sapphire / Delta Solar / Delta Solar - Ballistics Edition / quatix® 6X / 6X Solar / 6X Dual Power
+ fēnix® 7 / quatix® 7
+ fēnix® 7 Pro - Solar Edition (no Wi-Fi)
+ fēnix® 7 Pro
+ fēnix® 7S Pro
+ fēnix® 7S
+ fēnix® 7X / tactix® 7 / quatix® 7X Solar / Enduro™ 2
+ fēnix® 7X Pro - Solar Edition (no Wi-Fi)
+ fēnix® 7X Pro
+ fēnix® 8 43mm
+ fēnix® 8 47mm / 51mm
+ fēnix® 8 Solar 47mm
+ fēnix® 8 Solar 51mm
+ fēnix® E
+ Instinct® 2 / Solar / Dual Power / dēzl Edition
+ Instinct® 2S / Solar / Dual Power
+ Instinct® 2X Solar
+ Instinct® Crossover
+ MARQ® (Gen 2) Athlete / Adventurer / Captain / Golfer / Carbon Edition / Commander - Carbon Edition
+ MARQ® (Gen 2) Aviator
+ MARQ® Adventurer
+ MARQ® Athlete
+ MARQ® Aviator
+ MARQ® Captain / MARQ® Captain: American Magic Edition
+ MARQ® Commander
+ MARQ® Driver
+ MARQ® Expedition
+ MARQ® Golfer
+ Rey™
+ Venu® 2 Plus
+ Venu® 2
+ Venu® 2S
+ Venu® 3
+ Venu® 3S
+ Venu® Mercedes-Benz® Collection
+ Venu® Sq 2 Music
+ Venu® Sq 2
+ Venu® Sq. Music Edition
+ Venu® Sq
+ Venu®
+ vívoactive® 3 Music
+ vívoactive® 4
+ vívoactive® 4S
+ vívoactive® 5
+ 
+ Returns: Activity.WorkoutStepInfo — if a workout is active and there is a next step, null otherwise 
+ 
+ Since: API Level 3.2.0 Throws: ( Lang.OperationNotAllowedException ) — Thrown if called from a data field app 
+ 
+ getProfileInfo() as Activity.ProfileInfo 
+ Get information about the current profile. Returns: Activity.ProfileInfo — the current profile 
+ 
+ Since: API Level 3.2.0 Generated Dec 11, 2024, 8:58:42 AM

@@ -7,6 +7,7 @@
   "scripts": {
     "create:link2": "node scripts/reference-create-link.js",
     "create:link": "node scripts/document-create-link.js",
+    "create:text2": "node scripts/reference-scraping.js",
     "create:text": "node scripts/document-scraping.js"
   }
 }
