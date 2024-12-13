@@ -94,7 +94,7 @@ function saveToFile(filename, data) {
       });
     }
 
-    saveToFile("files/links.json", nestedResults);
+    saveToFile("files/document-links.json", nestedResults);
   } catch (error) {
     console.error("An error occurred:", error.message);
   }

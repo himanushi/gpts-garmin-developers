@@ -1,8 +1,8 @@
 const puppeteer = require("puppeteer");
 const fs = require("node:fs");
 
-const inputFile = "files/links.json";
-const outputFile = "files/document.txt";
+const inputFile = "files/document-links.json";
+const outputFile = "files/document-content.txt";
 
 async function fetchVisibleText(url) {
   try {
