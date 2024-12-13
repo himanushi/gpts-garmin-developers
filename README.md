@@ -1,4 +1,4 @@
-##　名前
+## 名前
 
 Garmin Developers
 
